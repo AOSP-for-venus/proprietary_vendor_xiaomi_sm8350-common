@@ -6,6 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/sm8350-common
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/sm8350-common/proprietary/system/lib/spatializer-aidl-cpp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/spatializer-aidl-cpp.so \
+    vendor/xiaomi/sm8350-common/proprietary/system/lib64/spatializer-aidl-cpp.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/spatializer-aidl-cpp.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/wfdservice64:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice64 \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
@@ -536,6 +538,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/libwfdutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdutils_proprietary.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
+    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/soundfx/libspatialaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libspatialaudio.so \
+    vendor/xiaomi/sm8350-common/proprietary/vendor/lib65/soundfx/libspatialaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libspatialaudio.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/vendor.qti.hardware.qconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qconfig@1.0.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.1.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.2.so \
