@@ -276,7 +276,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/libcapiv2svarnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svarnn.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
+    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/libcodec2_hidl@1.0.stock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl@1.0.stock.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/libcodec2_soft_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_soft_common.so \
+    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/libcodec2_vndk.stock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_vndk.stock.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/libdolbyottcameracontrol.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdolbyottcameracontrol.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/libdovi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdovi.so \
