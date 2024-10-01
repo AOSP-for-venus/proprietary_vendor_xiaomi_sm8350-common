@@ -736,7 +736,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmmosal",
+	name: "libmmosal-vendor",
+	stem: "libmmosal",
 	owner: "xiaomi",
 	strip: {
 		none: true,
@@ -1290,11 +1291,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfdhdcpcp.so"],
-			shared_libs: ["libmmosal", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal-vendor", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libwfdhdcpcp.so"],
-			shared_libs: ["libmmosal", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal-vendor", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -1408,7 +1409,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.wifidisplaysession@1.0",
+	name: "vendor.qti.hardware.wifidisplaysession@1.0-vendor",
+	stem: "vendor.qti.hardware.wifidisplaysession@1.0",
 	owner: "xiaomi",
 	strip: {
 		none: true,
@@ -1455,7 +1457,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libFileMux_proprietary.so"],
-			shared_libs: ["libmmosal", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal-vendor", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -1506,7 +1508,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libOmxVideoDSMode.so"],
-			shared_libs: ["liblog", "libmmosal", "libutils", "libOmxCore", "libwfdcommonutils_proprietary", "libwfdmmservice_proprietary", "libbinder", "libwfdutils_proprietary", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libmmosal-vendor", "libutils", "libOmxCore", "libwfdcommonutils_proprietary", "libwfdmmservice_proprietary", "libbinder", "libwfdutils_proprietary", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -1676,7 +1678,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libmmrtpdecoder_proprietary.so"],
-			shared_libs: ["libutils", "liblog", "libcutils", "libmmosal", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libutils", "liblog", "libcutils", "libmmosal-vendor", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -1693,7 +1695,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libmmrtpencoder_proprietary.so"],
-			shared_libs: ["libmmosal", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal-vendor", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -1880,7 +1882,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfdcodecv4l2_proprietary.so"],
-			shared_libs: ["libmmosal", "liblog", "libutils", "libcutils", "libwfdcommonutils_proprietary", "libwfdmminterface_proprietary", "libwfdutils_proprietary", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal-vendor", "liblog", "libutils", "libcutils", "libwfdcommonutils_proprietary", "libwfdmminterface_proprietary", "libwfdutils_proprietary", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -1897,7 +1899,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfdcommonutils_proprietary.so"],
-			shared_libs: ["libmmosal", "liblog", "libutils", "libcutils", "libion", "libprocessgroup", "libwfddisplayconfig_proprietary", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal-vendor", "liblog", "libutils", "libcutils", "libion", "libprocessgroup", "libwfddisplayconfig_proprietary", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -1914,7 +1916,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfdconfigutils_proprietary.so"],
-			shared_libs: ["libmmosal", "liblog", "libutils", "libcutils", "libbinder", "libnl", "libwfdmminterface_proprietary", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal-vendor", "liblog", "libutils", "libcutils", "libbinder", "libnl", "libwfdmminterface_proprietary", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -1931,7 +1933,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfdhdcpservice_proprietary.so"],
-			shared_libs: ["libmmosal", "liblog", "libutils", "libcutils", "libbinder", "libwfdhdcpcp", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal-vendor", "liblog", "libutils", "libcutils", "libbinder", "libwfdhdcpcp", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -1948,7 +1950,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfdmminterface_proprietary.so"],
-			shared_libs: ["libmmosal", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal-vendor", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -1965,7 +1967,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfdmmservice_proprietary.so"],
-			shared_libs: ["libmmosal", "liblog", "libutils", "libcutils", "libbinder", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal-vendor", "liblog", "libutils", "libcutils", "libbinder", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -1982,7 +1984,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfdmmsrc_proprietary.so"],
-			shared_libs: ["libbinder", "libmmosal", "liblog", "libutils", "libmmrtpencoder_proprietary", "libFileMux_proprietary", "libcutils", "libtinyalsa", "libwfdcommonutils_proprietary", "libwfdutils_proprietary", "libwfdconfigutils_proprietary", "libwfdaac_vendor", "libpng", "libwfdmminterface_proprietary", "libwfdcodecv4l2_proprietary", "libwfdmmservice_proprietary", "libhidlbase", "android.hardware.graphics.mapper@2.0", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbinder", "libmmosal-vendor", "liblog", "libutils", "libmmrtpencoder_proprietary", "libFileMux_proprietary", "libcutils", "libtinyalsa", "libwfdcommonutils_proprietary", "libwfdutils_proprietary", "libwfdconfigutils_proprietary", "libwfdaac_vendor", "libpng", "libwfdmminterface_proprietary", "libwfdcodecv4l2_proprietary", "libwfdmmservice_proprietary", "libhidlbase", "android.hardware.graphics.mapper@2.0", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -1999,7 +2001,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfdmodulehdcpsession.so"],
-			shared_libs: ["libmmosal", "liblog", "libutils", "libwfdhdcpcp", "libwfdcommonutils_proprietary", "libhidlbase", "libwfdutils_proprietary", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal-vendor", "liblog", "libutils", "libwfdhdcpcp", "libwfdcommonutils_proprietary", "libhidlbase", "libwfdutils_proprietary", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -2016,7 +2018,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfdrtsp_proprietary.so"],
-			shared_libs: ["libc++", "libcutils", "libutils", "libmmosal", "libwfdcommonutils_proprietary", "libwfdconfigutils_proprietary", "liblog", "libc", "libm", "libdl", ],
+			shared_libs: ["libc++", "libcutils", "libutils", "libmmosal-vendor", "libwfdcommonutils_proprietary", "libwfdconfigutils_proprietary", "liblog", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -2033,7 +2035,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfdsessionmodule.so"],
-			shared_libs: ["libmmosal", "liblog", "libutils", "libwfdsourcesession_proprietary", "vendor.qti.hardware.wifidisplaysession@1.0", "libwfdcommonutils_proprietary", "libhidlbase", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal-vendor", "liblog", "libutils", "libwfdsourcesession_proprietary", "vendor.qti.hardware.wifidisplaysession@1.0-vendor", "libwfdcommonutils_proprietary", "libhidlbase", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -2050,7 +2052,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfdsourcesession_proprietary.so"],
-			shared_libs: ["liblog", "libutils", "libcutils", "libbinder", "libmmosal", "libwfdcommonutils_proprietary", "libwfdconfigutils_proprietary", "libwfdmminterface_proprietary", "libmedia_helper", "libwfdmmsrc_proprietary", "libqdMetaData", "libhidlbase", "libwfdsourcesm_proprietary", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libutils", "libcutils", "libbinder", "libmmosal-vendor", "libwfdcommonutils_proprietary", "libwfdconfigutils_proprietary", "libwfdmminterface_proprietary", "libmedia_helper", "libwfdmmsrc_proprietary", "libqdMetaData", "libhidlbase", "libwfdsourcesm_proprietary", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -2067,7 +2069,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfdsourcesm_proprietary.so"],
-			shared_libs: ["libc++", "libcutils", "libutils", "libwfdrtsp_proprietary", "libmmrtpencoder_proprietary", "libmmrtpdecoder_proprietary", "libwfduibcinterface_proprietary", "libwfdmmsrc_proprietary", "libmmosal", "libwfdcommonutils_proprietary", "libwfdconfigutils_proprietary", "libqdMetaData", "libwfdmminterface_proprietary", "libwfdmodulehdcpsession", "libhidlbase", "libwfddisplayconfig_proprietary", "liblog", "libc", "libm", "libdl", ],
+			shared_libs: ["libc++", "libcutils", "libutils", "libwfdrtsp_proprietary", "libmmrtpencoder_proprietary", "libmmrtpdecoder_proprietary", "libwfduibcinterface_proprietary", "libwfdmmsrc_proprietary", "libmmosal-vendor", "libwfdcommonutils_proprietary", "libwfdconfigutils_proprietary", "libqdMetaData", "libwfdmminterface_proprietary", "libwfdmodulehdcpsession", "libhidlbase", "libwfddisplayconfig_proprietary", "liblog", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -2084,7 +2086,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfduibcinterface_proprietary.so"],
-			shared_libs: ["libmmosal", "liblog", "libutils", "libcutils", "libwfduibcsrcinterface_proprietary", "libwfduibcsinkinterface_proprietary", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal-vendor", "liblog", "libutils", "libcutils", "libwfduibcsrcinterface_proprietary", "libwfduibcsinkinterface_proprietary", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -2101,7 +2103,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfduibcsink_proprietary.so"],
-			shared_libs: ["libmmosal", "libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal-vendor", "libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -2118,7 +2120,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfduibcsinkinterface_proprietary.so"],
-			shared_libs: ["libmmosal", "liblog", "libutils", "libcutils", "libwfduibcsink_proprietary", "libwfdcommonutils_proprietary", "libwfdconfigutils_proprietary", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal-vendor", "liblog", "libutils", "libcutils", "libwfduibcsink_proprietary", "libwfdcommonutils_proprietary", "libwfdconfigutils_proprietary", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -2135,7 +2137,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfduibcsrc_proprietary.so"],
-			shared_libs: ["libmmosal", "libwfdcommonutils_proprietary", "liblog", "libutils", "libcutils", "libwfdconfigutils_proprietary", "libwfddisplayconfig_proprietary", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal-vendor", "libwfdcommonutils_proprietary", "liblog", "libutils", "libcutils", "libwfdconfigutils_proprietary", "libwfddisplayconfig_proprietary", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -2152,7 +2154,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfduibcsrcinterface_proprietary.so"],
-			shared_libs: ["libmmosal", "liblog", "libutils", "libcutils", "libwfduibcsrc_proprietary", "libwfdcommonutils_proprietary", "libwfdconfigutils_proprietary", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal-vendor", "liblog", "libutils", "libcutils", "libwfduibcsrc_proprietary", "libwfdcommonutils_proprietary", "libwfdconfigutils_proprietary", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -2169,7 +2171,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfdutils_proprietary.so"],
-			shared_libs: ["libmmosal", "liblog", "libion", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal-vendor", "liblog", "libion", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -2240,7 +2242,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so"],
-			shared_libs: ["libhidlbase", "libutils", "libcutils", "vendor.qti.hardware.wifidisplaysession@1.0", "libwfdsessionmodule", "liblog", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libhidlbase", "libutils", "libcutils", "vendor.qti.hardware.wifidisplaysession@1.0-vendor", "libwfdsessionmodule", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -8650,7 +8652,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/bin/wifidisplayhalservice"],
-			shared_libs: ["vendor.qti.hardware.wifidisplaysession@1.0", "vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl", "libhidlbase", "libutils", "liblog", "libbinder", "libavservices_minijail", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["vendor.qti.hardware.wifidisplaysession@1.0-vendor", "vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl", "libhidlbase", "libutils", "liblog", "libbinder", "libavservices_minijail", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",

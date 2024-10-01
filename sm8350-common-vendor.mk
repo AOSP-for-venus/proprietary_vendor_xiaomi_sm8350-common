@@ -176,7 +176,7 @@ PRODUCT_PACKAGES += \
     libllvm-glnext \
     libllvm-qcom \
     libmm-hdcpmgr \
-    libmmosal \
+    libmmosal-vendor \
     libqcci_legacy \
     libqcmaputils \
     libqconfigclient \
@@ -208,7 +208,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
     vendor.qti.hardware.vpp@2.0 \
-    vendor.qti.hardware.wifidisplaysession@1.0 \
+    vendor.qti.hardware.wifidisplaysession@1.0-vendor \
     sound_trigger.primary.lahaina \
     libFileMux_proprietary \
     libOmxDsdDec \
