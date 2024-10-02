@@ -5312,7 +5312,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.qti.diaghal@1.0",
+	name: "vendor.qti.diaghal@1.0-vendor",
+	stem: "vendor.qti.diaghal@1.0",
 	owner: "xiaomi",
 	strip: {
 		none: true,
