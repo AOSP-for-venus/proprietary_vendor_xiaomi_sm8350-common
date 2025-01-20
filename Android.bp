@@ -5977,38 +5977,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcodec2_soft_common",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_soft_common.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcpion",
     owner: "xiaomi",
     strip: {
@@ -8121,37 +8089,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libion",
                 "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsfplugin_ccodec_utils",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsfplugin_ccodec_utils.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk",
-                "libcutils",
-                "liblog",
-                "libstagefright_foundation",
-                "libutils",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -11935,45 +11872,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmiracastsystem",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libmiracastsystem.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libhardware_legacy",
-                "libaudiofoundation",
-                "audioclient-types-aidl-cpp",
-                "android.media.audio.common.types-V2-cpp",
-                "libmmosal",
-                "libutils",
-                "libmedia",
-                "libbinder",
-                "libnetutils",
-                "libwfdclient",
-                "libaudioclient",
-                "libmdnssd",
-                "libsigmautils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmmosal",
     owner: "xiaomi",
     strip: {
@@ -12072,35 +11970,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsigmautils",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libsigmautils.so",
-            ],
-            shared_libs: [
-                "libgui",
-                "libui",
-                "libutils",
-                "liblog",
-                "libwfdclient",
                 "libc++",
                 "libc",
                 "libm",
@@ -12745,63 +12614,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.sigma_miracast@1.0-halimpl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "vendor.qti.hardware.sigma_miracast@1.0",
-                "libutils",
-                "libmmosal",
-                "libmiracastsystem",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.sigma_miracast@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0.so",
             ],
             shared_libs: [
                 "libhidlbase",
