@@ -490,7 +490,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.1 \
     vendor.xiaomi.hardware.mlipay@1.0 \
     vendor.xiaomi.hardware.mlipay@1.1 \
-    vendor.xiaomi.hardware.mtdservice@1.0 \
     com.qualcomm.qti.dpm.api@1.0 \
     com.qualcomm.qti.wifidisplayhal@1.0 \
     lib-imsvideocodec \
