@@ -152,6 +152,9 @@ PRODUCT_PACKAGES += \
     libOpenCL \
     libadreno_utils \
     libc2d30_bltlib \
+    libcapiv2svacnn \
+    libcapiv2svarnn \
+    libcapiv2vop \
     libcdsprpc \
     libconfigdb \
     libcvp2_1 \
@@ -205,9 +208,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     sound_trigger.primary.lahaina \
     libFileMux_proprietary \
-    libcapiv2svacnn \
-    libcapiv2svarnn \
-    libcapiv2vop \
     libgcs-calwrapper \
     libgcs-ipc \
     libgcs-osal \
