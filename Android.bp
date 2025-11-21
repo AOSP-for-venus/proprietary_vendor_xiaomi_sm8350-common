@@ -11869,6 +11869,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmosey_daemon_ffi",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmosey_daemon_ffi.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "liblog",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libwfdavenhancements",
     owner: "xiaomi",
     strip: {
@@ -12871,6 +12895,15 @@ prebuilt_etc_xml {
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_mosey.xml",
+    owner: "xiaomi",
+    src: "proprietary/system_ext/etc/vintf/manifest/manifest_mosey.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    system_ext_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -14690,6 +14723,30 @@ cc_prebuilt_binary {
                 "libc++",
                 "libc",
                 "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "mosey_server",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/mosey_server",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "liblog",
+                "libc",
                 "libdl",
             ],
         },
